@@ -1,0 +1,422 @@
+{
+  "generatedAt": "2026-09-30T09:51:49.887Z",
+  "baseUrls": {
+    "web": "http://localhost:5173",
+    "api": "http://localhost:4000"
+  },
+  "results": [
+    {
+      "tester": 1,
+      "role": "outsider",
+      "label": "Tester 1 (outsider)",
+      "task": "Task1 Instructor publish quiz",
+      "login": "shlok@iitrpr.ac.in",
+      "start": "2026-09-30T09:39:29.631Z",
+      "end": "2026-09-30T09:40:08.505Z",
+      "durationMs": 38874,
+      "completed": false,
+      "errors": [
+        "add-numeric-question: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#q-text')\u001b[22m\n\u001b[2m    - locator resolved to <textarea rows=\"2\" id=\"q-text\">Which design principle best explains why a quiz s…</textarea>\u001b[22m\n\u001b[2m    - fill(\"If 350 students save once every 5 seconds, what is the approximate save rate in requests per second?\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m  - element was detached from the DOM, retrying\u001b[22m\n",
+        "publish: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: /Publish live version/i })\nExpected: enabled\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: /Publish live version/i })\u001b[22m\n"
+      ],
+      "confusion": [
+        "Publish button correctly disabled until a question is added."
+      ],
+      "screenshots": [
+        "t1-task1-dashboard.png",
+        "t1-task1-course.png",
+        "t1-task1-editor.png",
+        "t1-task1-settings-saved.png",
+        "Task1_Instructor_publish_quiz-t1-add-numeric-question-FAIL.png",
+        "Task1_Instructor_publish_quiz-t1-publish-FAIL.png"
+      ],
+      "observations": {
+        "quizId": "30"
+      }
+    },
+    {
+      "tester": 1,
+      "role": "outsider",
+      "label": "Tester 1 (outsider)",
+      "task": "Task2 Student attempt quiz",
+      "login": "student1@iitrpr.ac.in",
+      "start": "2026-09-30T09:40:08.548Z",
+      "end": "2026-09-30T09:41:16.050Z",
+      "durationMs": 67502,
+      "completed": false,
+      "errors": [
+        "open-course: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.card').filter({ hasText: 'AI511' })\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('.card').filter({ hasText: 'AI511' })\u001b[22m\n",
+        "start-attempt: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('link', { name: /HCI Basics — Checkpoint Quiz 1/i })\u001b[22m\n",
+        "answer-and-save: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.save-state')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.save-state')\u001b[22m\n",
+        "submit: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /Submit attempt/i })\u001b[22m\n"
+      ],
+      "confusion": [
+        "Window blur did not trigger a lock within timeout (policy may require real focus loss, or attempt already locked/exhausted)."
+      ],
+      "screenshots": [
+        "t1-task2-dashboard.png",
+        "Task2_Student_attempt_quiz-t1-open-course-FAIL.png",
+        "Task2_Student_attempt_quiz-t1-start-attempt-FAIL.png",
+        "Task2_Student_attempt_quiz-t1-answer-and-save-FAIL.png",
+        "Task2_Student_attempt_quiz-t1-submit-FAIL.png"
+      ],
+      "observations": {
+        "lockTriggered": false
+      }
+    },
+    {
+      "tester": 2,
+      "role": "outsider",
+      "label": "Tester 2 (outsider)",
+      "task": "Task1 Instructor publish quiz",
+      "login": "shlok@iitrpr.ac.in",
+      "start": "2026-09-30T09:41:16.094Z",
+      "end": "2026-09-30T09:41:54.256Z",
+      "durationMs": 38162,
+      "completed": false,
+      "errors": [
+        "add-numeric-question: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#q-text')\u001b[22m\n\u001b[2m    - locator resolved to <textarea rows=\"2\" id=\"q-text\">Which design principle best explains why a quiz s…</textarea>\u001b[22m\n\u001b[2m    - fill(\"If 350 students save once every 5 seconds, what is the approximate save rate in requests per second?\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m  - element was detached from the DOM, retrying\u001b[22m\n",
+        "publish: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: /Publish live version/i })\nExpected: enabled\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: /Publish live version/i })\u001b[22m\n"
+      ],
+      "confusion": [
+        "Publish button correctly disabled until a question is added."
+      ],
+      "screenshots": [
+        "t2-task1-dashboard.png",
+        "t2-task1-course.png",
+        "t2-task1-editor.png",
+        "t2-task1-settings-saved.png",
+        "Task1_Instructor_publish_quiz-t2-add-numeric-question-FAIL.png",
+        "Task1_Instructor_publish_quiz-t2-publish-FAIL.png"
+      ],
+      "observations": {
+        "quizId": "31"
+      }
+    },
+    {
+      "tester": 2,
+      "role": "outsider",
+      "label": "Tester 2 (outsider)",
+      "task": "Task2 Student attempt quiz",
+      "login": "student2@iitrpr.ac.in",
+      "start": "2026-09-30T09:41:54.290Z",
+      "end": "2026-09-30T09:43:01.828Z",
+      "durationMs": 67538,
+      "completed": false,
+      "errors": [
+        "open-course: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.card').filter({ hasText: 'AI511' })\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('.card').filter({ hasText: 'AI511' })\u001b[22m\n",
+        "start-attempt: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('link', { name: /HCI Basics — Checkpoint Quiz 1/i })\u001b[22m\n",
+        "answer-and-save: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.save-state')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.save-state')\u001b[22m\n",
+        "submit: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /Submit attempt/i })\u001b[22m\n"
+      ],
+      "confusion": [
+        "Window blur did not trigger a lock within timeout (policy may require real focus loss, or attempt already locked/exhausted)."
+      ],
+      "screenshots": [
+        "t2-task2-dashboard.png",
+        "Task2_Student_attempt_quiz-t2-open-course-FAIL.png",
+        "Task2_Student_attempt_quiz-t2-start-attempt-FAIL.png",
+        "Task2_Student_attempt_quiz-t2-answer-and-save-FAIL.png",
+        "Task2_Student_attempt_quiz-t2-submit-FAIL.png"
+      ],
+      "observations": {
+        "lockTriggered": false
+      }
+    },
+    {
+      "tester": 3,
+      "role": "outsider",
+      "label": "Tester 3 (outsider)",
+      "task": "Task1 Instructor publish quiz",
+      "login": "shlok@iitrpr.ac.in",
+      "start": "2026-09-30T09:43:01.870Z",
+      "end": "2026-09-30T09:43:39.742Z",
+      "durationMs": 37872,
+      "completed": false,
+      "errors": [
+        "add-numeric-question: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#q-text')\u001b[22m\n\u001b[2m    - locator resolved to <textarea rows=\"2\" id=\"q-text\">Which design principle best explains why a quiz s…</textarea>\u001b[22m\n\u001b[2m    - fill(\"If 350 students save once every 5 seconds, what is the approximate save rate in requests per second?\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m  - element was detached from the DOM, retrying\u001b[22m\n",
+        "publish: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: /Publish live version/i })\nExpected: enabled\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: /Publish live version/i })\u001b[22m\n"
+      ],
+      "confusion": [
+        "Publish button correctly disabled until a question is added."
+      ],
+      "screenshots": [
+        "t3-task1-dashboard.png",
+        "t3-task1-course.png",
+        "t3-task1-editor.png",
+        "t3-task1-settings-saved.png",
+        "Task1_Instructor_publish_quiz-t3-add-numeric-question-FAIL.png",
+        "Task1_Instructor_publish_quiz-t3-publish-FAIL.png"
+      ],
+      "observations": {
+        "quizId": "32"
+      }
+    },
+    {
+      "tester": 3,
+      "role": "outsider",
+      "label": "Tester 3 (outsider)",
+      "task": "Task2 Student attempt quiz",
+      "login": "student3@iitrpr.ac.in",
+      "start": "2026-09-30T09:43:39.773Z",
+      "end": "2026-09-30T09:44:47.299Z",
+      "durationMs": 67526,
+      "completed": false,
+      "errors": [
+        "open-course: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.card').filter({ hasText: 'AI511' })\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('.card').filter({ hasText: 'AI511' })\u001b[22m\n",
+        "start-attempt: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('link', { name: /HCI Basics — Checkpoint Quiz 1/i })\u001b[22m\n",
+        "answer-and-save: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.save-state')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.save-state')\u001b[22m\n",
+        "submit: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /Submit attempt/i })\u001b[22m\n"
+      ],
+      "confusion": [
+        "Window blur did not trigger a lock within timeout (policy may require real focus loss, or attempt already locked/exhausted)."
+      ],
+      "screenshots": [
+        "t3-task2-dashboard.png",
+        "Task2_Student_attempt_quiz-t3-open-course-FAIL.png",
+        "Task2_Student_attempt_quiz-t3-start-attempt-FAIL.png",
+        "Task2_Student_attempt_quiz-t3-answer-and-save-FAIL.png",
+        "Task2_Student_attempt_quiz-t3-submit-FAIL.png"
+      ],
+      "observations": {
+        "lockTriggered": false
+      }
+    },
+    {
+      "tester": 4,
+      "role": "outsider",
+      "label": "Tester 4 (outsider)",
+      "task": "Task1 Instructor publish quiz",
+      "login": "shlok@iitrpr.ac.in",
+      "start": "2026-09-30T09:44:47.331Z",
+      "end": "2026-09-30T09:45:25.532Z",
+      "durationMs": 38201,
+      "completed": false,
+      "errors": [
+        "add-numeric-question: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#q-text')\u001b[22m\n\u001b[2m    - locator resolved to <textarea rows=\"2\" id=\"q-text\">Which design principle best explains why a quiz s…</textarea>\u001b[22m\n\u001b[2m    - fill(\"If 350 students save once every 5 seconds, what is the approximate save rate in requests per second?\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m  - element was detached from the DOM, retrying\u001b[22m\n",
+        "publish: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: /Publish live version/i })\nExpected: enabled\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: /Publish live version/i })\u001b[22m\n"
+      ],
+      "confusion": [
+        "Publish button correctly disabled until a question is added."
+      ],
+      "screenshots": [
+        "t4-task1-dashboard.png",
+        "t4-task1-course.png",
+        "t4-task1-editor.png",
+        "t4-task1-settings-saved.png",
+        "Task1_Instructor_publish_quiz-t4-add-numeric-question-FAIL.png",
+        "Task1_Instructor_publish_quiz-t4-publish-FAIL.png"
+      ],
+      "observations": {
+        "quizId": "33"
+      }
+    },
+    {
+      "tester": 4,
+      "role": "outsider",
+      "label": "Tester 4 (outsider)",
+      "task": "Task2 Student attempt quiz",
+      "login": "student4@iitrpr.ac.in",
+      "start": "2026-09-30T09:45:25.569Z",
+      "end": "2026-09-30T09:46:32.703Z",
+      "durationMs": 67134,
+      "completed": false,
+      "errors": [
+        "open-course: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.card').filter({ hasText: 'AI511' })\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('.card').filter({ hasText: 'AI511' })\u001b[22m\n",
+        "start-attempt: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('link', { name: /HCI Basics — Checkpoint Quiz 1/i })\u001b[22m\n",
+        "answer-and-save: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.save-state')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.save-state')\u001b[22m\n",
+        "submit: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /Submit attempt/i })\u001b[22m\n"
+      ],
+      "confusion": [
+        "Window blur did not trigger a lock within timeout (policy may require real focus loss, or attempt already locked/exhausted)."
+      ],
+      "screenshots": [
+        "t4-task2-dashboard.png",
+        "Task2_Student_attempt_quiz-t4-open-course-FAIL.png",
+        "Task2_Student_attempt_quiz-t4-start-attempt-FAIL.png",
+        "Task2_Student_attempt_quiz-t4-answer-and-save-FAIL.png",
+        "Task2_Student_attempt_quiz-t4-submit-FAIL.png"
+      ],
+      "observations": {
+        "lockTriggered": false
+      }
+    },
+    {
+      "tester": 5,
+      "role": "outsider",
+      "label": "Tester 5 (outsider)",
+      "task": "Task1 Instructor publish quiz",
+      "login": "shlok@iitrpr.ac.in",
+      "start": "2026-09-30T09:46:32.740Z",
+      "end": "2026-09-30T09:47:10.946Z",
+      "durationMs": 38206,
+      "completed": false,
+      "errors": [
+        "add-numeric-question: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#q-text')\u001b[22m\n\u001b[2m    - locator resolved to <textarea rows=\"2\" id=\"q-text\">Which design principle best explains why a quiz s…</textarea>\u001b[22m\n\u001b[2m    - fill(\"If 350 students save once every 5 seconds, what is the approximate save rate in requests per second?\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m  - element was detached from the DOM, retrying\u001b[22m\n",
+        "publish: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: /Publish live version/i })\nExpected: enabled\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: /Publish live version/i })\u001b[22m\n"
+      ],
+      "confusion": [
+        "Publish button correctly disabled until a question is added."
+      ],
+      "screenshots": [
+        "t5-task1-dashboard.png",
+        "t5-task1-course.png",
+        "t5-task1-editor.png",
+        "t5-task1-settings-saved.png",
+        "Task1_Instructor_publish_quiz-t5-add-numeric-question-FAIL.png",
+        "Task1_Instructor_publish_quiz-t5-publish-FAIL.png"
+      ],
+      "observations": {
+        "quizId": "34"
+      }
+    },
+    {
+      "tester": 5,
+      "role": "outsider",
+      "label": "Tester 5 (outsider)",
+      "task": "Task2 Student attempt quiz",
+      "login": "student5@iitrpr.ac.in",
+      "start": "2026-09-30T09:47:10.978Z",
+      "end": "2026-09-30T09:48:18.405Z",
+      "durationMs": 67427,
+      "completed": false,
+      "errors": [
+        "open-course: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.card').filter({ hasText: 'AI511' })\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('.card').filter({ hasText: 'AI511' })\u001b[22m\n",
+        "start-attempt: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('link', { name: /HCI Basics — Checkpoint Quiz 1/i })\u001b[22m\n",
+        "answer-and-save: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.save-state')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.save-state')\u001b[22m\n",
+        "submit: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /Submit attempt/i })\u001b[22m\n"
+      ],
+      "confusion": [
+        "Window blur did not trigger a lock within timeout (policy may require real focus loss, or attempt already locked/exhausted)."
+      ],
+      "screenshots": [
+        "t5-task2-dashboard.png",
+        "Task2_Student_attempt_quiz-t5-open-course-FAIL.png",
+        "Task2_Student_attempt_quiz-t5-start-attempt-FAIL.png",
+        "Task2_Student_attempt_quiz-t5-answer-and-save-FAIL.png",
+        "Task2_Student_attempt_quiz-t5-submit-FAIL.png"
+      ],
+      "observations": {
+        "lockTriggered": false
+      }
+    },
+    {
+      "tester": 6,
+      "role": "insider",
+      "label": "Tester 6 (Shlok)",
+      "task": "Task1 Instructor publish quiz",
+      "login": "shlok@iitrpr.ac.in",
+      "start": "2026-09-30T09:48:18.440Z",
+      "end": "2026-09-30T09:48:56.789Z",
+      "durationMs": 38349,
+      "completed": false,
+      "errors": [
+        "add-numeric-question: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#q-text')\u001b[22m\n\u001b[2m    - locator resolved to <textarea rows=\"2\" id=\"q-text\">Which design principle best explains why a quiz s…</textarea>\u001b[22m\n\u001b[2m    - fill(\"If 350 students save once every 5 seconds, what is the approximate save rate in requests per second?\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m  - element was detached from the DOM, retrying\u001b[22m\n",
+        "publish: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: /Publish live version/i })\nExpected: enabled\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: /Publish live version/i })\u001b[22m\n"
+      ],
+      "confusion": [
+        "Publish button correctly disabled until a question is added."
+      ],
+      "screenshots": [
+        "t6-task1-dashboard.png",
+        "t6-task1-course.png",
+        "t6-task1-editor.png",
+        "t6-task1-settings-saved.png",
+        "Task1_Instructor_publish_quiz-t6-add-numeric-question-FAIL.png",
+        "Task1_Instructor_publish_quiz-t6-publish-FAIL.png"
+      ],
+      "observations": {
+        "quizId": "35"
+      }
+    },
+    {
+      "tester": 6,
+      "role": "insider",
+      "label": "Tester 6 (Shlok)",
+      "task": "Task2 Student attempt quiz",
+      "login": "student1@iitrpr.ac.in",
+      "start": "2026-09-30T09:48:56.827Z",
+      "end": "2026-09-30T09:50:04.179Z",
+      "durationMs": 67352,
+      "completed": false,
+      "errors": [
+        "open-course: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.card').filter({ hasText: 'AI511' })\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('.card').filter({ hasText: 'AI511' })\u001b[22m\n",
+        "start-attempt: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('link', { name: /HCI Basics — Checkpoint Quiz 1/i })\u001b[22m\n",
+        "answer-and-save: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.save-state')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.save-state')\u001b[22m\n",
+        "submit: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /Submit attempt/i })\u001b[22m\n"
+      ],
+      "confusion": [
+        "Window blur did not trigger a lock within timeout (policy may require real focus loss, or attempt already locked/exhausted)."
+      ],
+      "screenshots": [
+        "t6-task2-dashboard.png",
+        "Task2_Student_attempt_quiz-t6-open-course-FAIL.png",
+        "Task2_Student_attempt_quiz-t6-start-attempt-FAIL.png",
+        "Task2_Student_attempt_quiz-t6-answer-and-save-FAIL.png",
+        "Task2_Student_attempt_quiz-t6-submit-FAIL.png"
+      ],
+      "observations": {
+        "lockTriggered": false
+      }
+    },
+    {
+      "tester": 7,
+      "role": "insider",
+      "label": "Tester 7 (Saaransh)",
+      "task": "Task1 Instructor publish quiz",
+      "login": "saaransh@iitrpr.ac.in",
+      "start": "2026-09-30T09:50:04.225Z",
+      "end": "2026-09-30T09:50:42.314Z",
+      "durationMs": 38089,
+      "completed": false,
+      "errors": [
+        "add-numeric-question: locator.fill: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#q-text')\u001b[22m\n\u001b[2m    - locator resolved to <textarea rows=\"2\" id=\"q-text\">Which design principle best explains why a quiz s…</textarea>\u001b[22m\n\u001b[2m    - fill(\"If 350 students save once every 5 seconds, what is the approximate save rate in requests per second?\")\u001b[22m\n\u001b[2m  - attempting fill action\u001b[22m\n\u001b[2m    - waiting for element to be visible, enabled and editable\u001b[22m\n\u001b[2m  - element was detached from the DOM, retrying\u001b[22m\n",
+        "publish: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeEnabled\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByRole('button', { name: /Publish live version/i })\nExpected: enabled\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeEnabled\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for getByRole('button', { name: /Publish live version/i })\u001b[22m\n"
+      ],
+      "confusion": [
+        "Publish button correctly disabled until a question is added."
+      ],
+      "screenshots": [
+        "t7-task1-dashboard.png",
+        "t7-task1-course.png",
+        "t7-task1-editor.png",
+        "t7-task1-settings-saved.png",
+        "Task1_Instructor_publish_quiz-t7-add-numeric-question-FAIL.png",
+        "Task1_Instructor_publish_quiz-t7-publish-FAIL.png"
+      ],
+      "observations": {
+        "quizId": "36"
+      }
+    },
+    {
+      "tester": 7,
+      "role": "insider",
+      "label": "Tester 7 (Saaransh)",
+      "task": "Task2 Student attempt quiz",
+      "login": "student1@iitrpr.ac.in",
+      "start": "2026-09-30T09:50:42.354Z",
+      "end": "2026-09-30T09:51:49.875Z",
+      "durationMs": 67521,
+      "completed": false,
+      "errors": [
+        "open-course: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.card').filter({ hasText: 'AI511' })\nExpected: visible\nTimeout: 15000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 15000ms\u001b[22m\n\u001b[2m  - waiting for locator('.card').filter({ hasText: 'AI511' })\u001b[22m\n",
+        "start-attempt: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('link', { name: /HCI Basics — Checkpoint Quiz 1/i })\u001b[22m\n",
+        "answer-and-save: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.save-state')\nExpected: visible\nTimeout: 5000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('.save-state')\u001b[22m\n",
+        "submit: locator.click: Timeout 15000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: /Submit attempt/i })\u001b[22m\n"
+      ],
+      "confusion": [
+        "Window blur did not trigger a lock within timeout (policy may require real focus loss, or attempt already locked/exhausted)."
+      ],
+      "screenshots": [
+        "t7-task2-dashboard.png",
+        "Task2_Student_attempt_quiz-t7-open-course-FAIL.png",
+        "Task2_Student_attempt_quiz-t7-start-attempt-FAIL.png",
+        "Task2_Student_attempt_quiz-t7-answer-and-save-FAIL.png",
+        "Task2_Student_attempt_quiz-t7-submit-FAIL.png"
+      ],
+      "observations": {
+        "lockTriggered": false
+      }
+    }
+  ]
+}
