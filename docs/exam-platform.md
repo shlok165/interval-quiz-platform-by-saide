@@ -160,6 +160,57 @@ stealing focus, a laptop going to sleep). Nothing changes a grade on its own.
   including **every saved revision of every answer** (for disputes).
 * **Analytics**: score distribution, item difficulty and discrimination.
 
+### Post-exam tools (Analytics page → tabs)
+
+The analytics page opens with a choice — *Detect cheating*, *Normalize random questions*, *Mark written answers*,
+*Fix a question*. Nothing runs until the instructor picks it; every change recalculates all affected papers
+and is written to the audit log.
+
+* **Marking.** Descriptive questions are never auto-graded: each written answer is marked out of the points set
+  when the question was created, with optional feedback. Answers that came with an **assumption** are listed
+  too, so a reasonable assumption can earn marks. Names can be hidden while marking. A student's score stays
+  hidden ("marking in progress") until all of their written answers are marked.
+* **Questions & regrade.** Per question: students, average marks, discrimination, difficulty as observed,
+  answer distribution, and plain-language warnings ("more students chose B than the key"). *Regrade* can
+  also-accept another answer, change the key, give full marks to everyone, or drop the question. The
+  published-quiz answer-key editor uses the same regrade path.
+* **Difficulty suggestions.** A bank question whose results disagree with its easy/medium/hard tag (easy ≥ 75%
+  of marks earned, hard < 40%, at least 5 students) gets a one-click *Re-rate* — future random draws then use
+  the corrected level.
+* **Random fairness.** For every random slot, the variants students drew are compared side by side (bar chart
+  of average marks, table, answer distributions) with a chi-square test of whether the gap is beyond chance.
+  *Normalize* gives students on harder variants a bonus up to the easiest variant's average — never above the
+  question's points, nobody loses marks — and can be undone.
+* **Cheating check.** For each pair of students, matching *wrong* answers are counted; the chance of each match
+  is how popular that wrong answer was among everyone else, the exact probability of at least that many matches
+  is computed and corrected for the number of pairs (Bonferroni), and near-identical written answers (word
+  3-gram overlap) are detected. Same network, saving shared answers within 30 s, and submit times are shown as
+  context only. One click flags both attempts for review. It is evidence to discuss, never an automatic penalty.
+* **Appeals.** Students appeal a mark (per question, once results are released) or an integrity decision.
+  Instructors see the question, the student's answer and assumption, and accept (optionally with new marks) or
+  reject with a reply; accepting an integrity appeal resolves the open staff flags.
+* **Attempt timeline.** Incidents and the monitor show one chronological story per attempt: every answer change
+  (with assumptions), browser and session events, raised hands and replies, flags, appeals and rulings, filterable
+  by type.
+
+### During the exam
+
+* **Raise hand.** Students send a private question (optionally about the current question). Staff reply
+  privately, or answer everyone who has that question — the reply is pinned above the question on their screens.
+  A student may have 2 waiting and 10 in total per attempt.
+* **Question health** (monitor tab). Questions that look broken while the exam runs: almost nobody correct,
+  many blanks among finished students, answers that keep flipping, several raised hands. *Clarify* pins a note
+  to that question for the students who have it.
+* **Assumptions.** Any question type can allow an assumption box; it is saved with the answer.
+
+### Accessibility profiles
+
+Every user has display preferences — text size, high contrast, line spacing, a more readable font, reduced
+motion, underlined links — that apply on every page and in every exam. Users change their own from the
+accessibility button in the top bar at any time **except during an attempt** (the server refuses changes while
+one is in progress). Admins can set them for anyone on the Users page and grant an account-wide **extra-time**
+multiplier (1×–3×); combined with a course accommodation, the larger one applies.
+
 ---
 
 ## 3. Several quizzes live at once
