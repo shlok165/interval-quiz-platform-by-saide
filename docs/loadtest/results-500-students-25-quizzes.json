@@ -1,0 +1,135 @@
+{
+  "when": "2026-10-08T00:11:30.075Z",
+  "students": 500,
+  "live_quizzes": 25,
+  "exam_phase_seconds": 90,
+  "machine": {
+    "platform": "win32 10.0.26300",
+    "cpus": 16,
+    "cpu": "AMD Ryzen 7 7840HS w/ Radeon 780M Graphics     ",
+    "node": "v24.19.0"
+  },
+  "bursts_seconds": {
+    "login_burst_s": 2.0149728000000007,
+    "start_burst_s": 0.4754993999999997,
+    "exam_phase_s": 95.645579,
+    "exam_phase_cpu_percent_of_one_core": 19.7,
+    "submit_burst_s": 0.8667378999999928
+  },
+  "exam_phase_req_per_s": 156.9,
+  "server": {
+    "ok": true,
+    "service": "interval-api",
+    "time": "2026-10-08T00:11:30.065Z",
+    "uptime_s": 100,
+    "event_loop_delay_ms": {
+      "p50": 6.1,
+      "p99": 21.8,
+      "max": 192.1
+    },
+    "memory_mb": 132,
+    "cpu_ms": 47702
+  },
+  "endpoints": [
+    {
+      "endpoint": "login",
+      "requests": 501,
+      "connection_retries": 0,
+      "errors": 0,
+      "error_kinds": {},
+      "p50_ms": 1105,
+      "p95_ms": 1886,
+      "p99_ms": 1952,
+      "max_ms": 1966
+    },
+    {
+      "endpoint": "start attempt",
+      "requests": 500,
+      "connection_retries": 12,
+      "errors": 0,
+      "error_kinds": {},
+      "p50_ms": 241,
+      "p95_ms": 426,
+      "p99_ms": 442,
+      "max_ms": 444
+    },
+    {
+      "endpoint": "monitor (20 rows)",
+      "requests": 450,
+      "connection_retries": 0,
+      "errors": 0,
+      "error_kinds": {},
+      "p50_ms": 8,
+      "p95_ms": 24,
+      "p99_ms": 30,
+      "max_ms": 38
+    },
+    {
+      "endpoint": "monitor event feed",
+      "requests": 450,
+      "connection_retries": 0,
+      "errors": 0,
+      "error_kinds": {},
+      "p50_ms": 8,
+      "p95_ms": 25,
+      "p99_ms": 28,
+      "max_ms": 30
+    },
+    {
+      "endpoint": "heartbeat",
+      "requests": 2999,
+      "connection_retries": 0,
+      "errors": 0,
+      "error_kinds": {},
+      "p50_ms": 2,
+      "p95_ms": 5,
+      "p99_ms": 15,
+      "max_ms": 34
+    },
+    {
+      "endpoint": "save answer",
+      "requests": 10989,
+      "connection_retries": 0,
+      "errors": 0,
+      "error_kinds": {},
+      "p50_ms": 2,
+      "p95_ms": 6,
+      "p99_ms": 20,
+      "max_ms": 37
+    },
+    {
+      "endpoint": "integrity event",
+      "requests": 119,
+      "connection_retries": 0,
+      "errors": 0,
+      "error_kinds": {},
+      "p50_ms": 1,
+      "p95_ms": 6,
+      "p99_ms": 21,
+      "max_ms": 24
+    },
+    {
+      "endpoint": "submit",
+      "requests": 500,
+      "connection_retries": 0,
+      "errors": 0,
+      "error_kinds": {},
+      "p50_ms": 486,
+      "p95_ms": 807,
+      "p99_ms": 840,
+      "max_ms": 844
+    },
+    {
+      "endpoint": "gradebook CSV export",
+      "requests": 1,
+      "connection_retries": 0,
+      "errors": 0,
+      "error_kinds": {},
+      "p50_ms": 16,
+      "p95_ms": 16,
+      "p99_ms": 16,
+      "max_ms": 16
+    }
+  ],
+  "total_errors": 0
+}

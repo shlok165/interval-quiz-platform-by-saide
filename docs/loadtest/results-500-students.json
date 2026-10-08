@@ -1,0 +1,132 @@
+{
+  "when": "2026-10-07T22:02:57.972Z",
+  "students": 500,
+  "exam_phase_seconds": 180,
+  "machine": {
+    "platform": "win32 10.0.26300",
+    "cpus": 16,
+    "cpu": "AMD Ryzen 7 7840HS w/ Radeon 780M Graphics     ",
+    "node": "v24.19.0"
+  },
+  "bursts_seconds": {
+    "login_burst_s": 2.2606329,
+    "start_burst_s": 0.42705949999999937,
+    "exam_phase_s": 185.844353,
+    "submit_burst_s": 1.27140459999998
+  },
+  "exam_phase_req_per_s": 153.9,
+  "server": {
+    "ok": true,
+    "service": "interval-api",
+    "time": "2026-10-07T22:02:57.953Z",
+    "uptime_s": 190,
+    "event_loop_delay_ms": {
+      "p50": 4.8,
+      "p99": 20,
+      "max": 303.8
+    },
+    "memory_mb": 120
+  },
+  "endpoints": [
+    {
+      "endpoint": "login",
+      "requests": 501,
+      "connection_retries": 0,
+      "errors": 0,
+      "error_kinds": {},
+      "p50_ms": 1223,
+      "p95_ms": 2164,
+      "p99_ms": 2228,
+      "max_ms": 2237
+    },
+    {
+      "endpoint": "start attempt",
+      "requests": 500,
+      "connection_retries": 12,
+      "errors": 0,
+      "error_kinds": {},
+      "p50_ms": 223,
+      "p95_ms": 395,
+      "p99_ms": 409,
+      "max_ms": 411
+    },
+    {
+      "endpoint": "monitor (500 rows)",
+      "requests": 72,
+      "connection_retries": 0,
+      "errors": 0,
+      "error_kinds": {},
+      "p50_ms": 19,
+      "p95_ms": 40,
+      "p99_ms": 47,
+      "max_ms": 47
+    },
+    {
+      "endpoint": "monitor event feed",
+      "requests": 72,
+      "connection_retries": 0,
+      "errors": 0,
+      "error_kinds": {},
+      "p50_ms": 6,
+      "p95_ms": 21,
+      "p99_ms": 30,
+      "max_ms": 30
+    },
+    {
+      "endpoint": "heartbeat",
+      "requests": 6008,
+      "connection_retries": 0,
+      "errors": 0,
+      "error_kinds": {},
+      "p50_ms": 2,
+      "p95_ms": 5,
+      "p99_ms": 11,
+      "max_ms": 44
+    },
+    {
+      "endpoint": "save answer",
+      "requests": 22214,
+      "connection_retries": 0,
+      "errors": 0,
+      "error_kinds": {},
+      "p50_ms": 2,
+      "p95_ms": 5,
+      "p99_ms": 15,
+      "max_ms": 49
+    },
+    {
+      "endpoint": "integrity event",
+      "requests": 232,
+      "connection_retries": 0,
+      "errors": 0,
+      "error_kinds": {},
+      "p50_ms": 1,
+      "p95_ms": 4,
+      "p99_ms": 17,
+      "max_ms": 19
+    },
+    {
+      "endpoint": "submit",
+      "requests": 500,
+      "connection_retries": 46,
+      "errors": 0,
+      "error_kinds": {},
+      "p50_ms": 686,
+      "p95_ms": 1077,
+      "p99_ms": 1128,
+      "max_ms": 1138
+    },
+    {
+      "endpoint": "gradebook CSV export",
+      "requests": 1,
+      "connection_retries": 0,
+      "errors": 0,
+      "error_kinds": {},
+      "p50_ms": 77,
+      "p95_ms": 77,
+      "p99_ms": 77,
+      "max_ms": 77
+    }
+  ],
+  "total_errors": 0
+}
