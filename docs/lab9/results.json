@@ -1,0 +1,852 @@
+{
+  "run_at": "2026-10-12T18:33:37.776Z",
+  "web": "http://localhost:5173",
+  "api": "http://localhost:4000",
+  "testers": [
+    {
+      "id": "N11",
+      "name": "Ananya Rao",
+      "role": "student",
+      "task1": {
+        "attempted": true,
+        "completed": true,
+        "steps": [
+          {
+            "name": "login",
+            "pass": true,
+            "ms": 2896,
+            "error": null
+          },
+          {
+            "name": "open-course",
+            "pass": true,
+            "ms": 601,
+            "error": null
+          },
+          {
+            "name": "open-editor",
+            "pass": true,
+            "ms": 347,
+            "error": null
+          },
+          {
+            "name": "set-metadata",
+            "pass": true,
+            "ms": 140,
+            "error": null
+          },
+          {
+            "name": "save-settings",
+            "pass": true,
+            "ms": 1347,
+            "error": null
+          },
+          {
+            "name": "add-question-1-single",
+            "pass": true,
+            "ms": 297,
+            "error": null
+          },
+          {
+            "name": "add-question-2-multiple",
+            "pass": true,
+            "ms": 801,
+            "error": null
+          },
+          {
+            "name": "add-question-3-numeric",
+            "pass": true,
+            "ms": 796,
+            "error": null
+          },
+          {
+            "name": "add-question-4-short",
+            "pass": true,
+            "ms": 499,
+            "error": null
+          },
+          {
+            "name": "save-exam-rules",
+            "pass": true,
+            "ms": 686,
+            "error": null
+          },
+          {
+            "name": "question-count-4",
+            "pass": true,
+            "ms": 25,
+            "error": null
+          },
+          {
+            "name": "publish",
+            "pass": true,
+            "ms": 1201,
+            "error": null
+          },
+          {
+            "name": "published-badge",
+            "pass": true,
+            "ms": 1972,
+            "error": null
+          },
+          {
+            "name": "new-draft-not-mutate",
+            "pass": true,
+            "ms": 214,
+            "error": null
+          }
+        ],
+        "time_ms": 12208,
+        "errors": 0,
+        "completed_steps": 14,
+        "total_steps": 14
+      },
+      "task2": {
+        "attempted": true,
+        "completed": true,
+        "steps": [
+          {
+            "name": "login",
+            "pass": true,
+            "ms": 2330,
+            "error": null
+          },
+          {
+            "name": "open-course",
+            "pass": true,
+            "ms": 555,
+            "error": null
+          },
+          {
+            "name": "open-quiz",
+            "pass": true,
+            "ms": 467,
+            "error": null
+          },
+          {
+            "name": "read-preflight",
+            "pass": true,
+            "ms": 14,
+            "error": null
+          },
+          {
+            "name": "agree-rules",
+            "pass": true,
+            "ms": 428,
+            "error": null
+          },
+          {
+            "name": "start-attempt",
+            "pass": true,
+            "ms": 171,
+            "error": null
+          },
+          {
+            "name": "answer-questions",
+            "pass": true,
+            "ms": 1474,
+            "error": null
+          },
+          {
+            "name": "save-acknowledged",
+            "pass": true,
+            "ms": 9,
+            "error": null
+          },
+          {
+            "name": "submit",
+            "pass": true,
+            "ms": 303,
+            "error": null
+          },
+          {
+            "name": "receipt",
+            "pass": true,
+            "ms": 5,
+            "error": null
+          }
+        ],
+        "time_ms": 6049,
+        "errors": 0,
+        "completed_steps": 10,
+        "total_steps": 10
+      }
+    },
+    {
+      "id": "N12",
+      "name": "Vikram Shah",
+      "role": "student",
+      "task1": {
+        "attempted": true,
+        "completed": true,
+        "steps": [
+          {
+            "name": "login",
+            "pass": true,
+            "ms": 2353,
+            "error": null
+          },
+          {
+            "name": "open-course",
+            "pass": true,
+            "ms": 317,
+            "error": null
+          },
+          {
+            "name": "open-editor",
+            "pass": true,
+            "ms": 178,
+            "error": null
+          },
+          {
+            "name": "set-metadata",
+            "pass": true,
+            "ms": 49,
+            "error": null
+          },
+          {
+            "name": "save-settings",
+            "pass": true,
+            "ms": 809,
+            "error": null
+          },
+          {
+            "name": "add-question-1-single",
+            "pass": true,
+            "ms": 147,
+            "error": null
+          },
+          {
+            "name": "add-question-2-multiple",
+            "pass": true,
+            "ms": 288,
+            "error": null
+          },
+          {
+            "name": "add-question-3-numeric",
+            "pass": true,
+            "ms": 130,
+            "error": null
+          },
+          {
+            "name": "add-question-4-short",
+            "pass": true,
+            "ms": 249,
+            "error": null
+          },
+          {
+            "name": "save-exam-rules",
+            "pass": true,
+            "ms": 446,
+            "error": null
+          },
+          {
+            "name": "question-count-4",
+            "pass": true,
+            "ms": 4,
+            "error": null
+          },
+          {
+            "name": "publish",
+            "pass": true,
+            "ms": 374,
+            "error": null
+          },
+          {
+            "name": "published-badge",
+            "pass": true,
+            "ms": 211,
+            "error": null
+          },
+          {
+            "name": "new-draft-not-mutate",
+            "pass": true,
+            "ms": 5,
+            "error": null
+          }
+        ],
+        "time_ms": 5703,
+        "errors": 0,
+        "completed_steps": 14,
+        "total_steps": 14
+      },
+      "task2": {
+        "attempted": true,
+        "completed": true,
+        "steps": [
+          {
+            "name": "login",
+            "pass": true,
+            "ms": 2040,
+            "error": null
+          },
+          {
+            "name": "open-course",
+            "pass": true,
+            "ms": 254,
+            "error": null
+          },
+          {
+            "name": "open-quiz",
+            "pass": true,
+            "ms": 206,
+            "error": null
+          },
+          {
+            "name": "read-preflight",
+            "pass": true,
+            "ms": 8,
+            "error": null
+          },
+          {
+            "name": "agree-rules",
+            "pass": true,
+            "ms": 404,
+            "error": null
+          },
+          {
+            "name": "start-attempt",
+            "pass": true,
+            "ms": 87,
+            "error": null
+          },
+          {
+            "name": "answer-questions",
+            "pass": true,
+            "ms": 1420,
+            "error": null
+          },
+          {
+            "name": "save-acknowledged",
+            "pass": true,
+            "ms": 9,
+            "error": null
+          },
+          {
+            "name": "submit",
+            "pass": true,
+            "ms": 289,
+            "error": null
+          },
+          {
+            "name": "receipt",
+            "pass": true,
+            "ms": 5,
+            "error": null
+          }
+        ],
+        "time_ms": 4807,
+        "errors": 0,
+        "completed_steps": 10,
+        "total_steps": 10
+      }
+    },
+    {
+      "id": "N13",
+      "name": "Priya Menon",
+      "role": "student",
+      "task1": {
+        "attempted": true,
+        "completed": true,
+        "steps": [
+          {
+            "name": "login",
+            "pass": true,
+            "ms": 2412,
+            "error": null
+          },
+          {
+            "name": "open-course",
+            "pass": true,
+            "ms": 322,
+            "error": null
+          },
+          {
+            "name": "open-editor",
+            "pass": true,
+            "ms": 199,
+            "error": null
+          },
+          {
+            "name": "set-metadata",
+            "pass": true,
+            "ms": 53,
+            "error": null
+          },
+          {
+            "name": "save-settings",
+            "pass": true,
+            "ms": 797,
+            "error": null
+          },
+          {
+            "name": "add-question-1-single",
+            "pass": true,
+            "ms": 137,
+            "error": null
+          },
+          {
+            "name": "add-question-2-multiple",
+            "pass": true,
+            "ms": 288,
+            "error": null
+          },
+          {
+            "name": "add-question-3-numeric",
+            "pass": true,
+            "ms": 116,
+            "error": null
+          },
+          {
+            "name": "add-question-4-short",
+            "pass": true,
+            "ms": 979,
+            "error": null
+          },
+          {
+            "name": "save-exam-rules",
+            "pass": true,
+            "ms": 451,
+            "error": null
+          },
+          {
+            "name": "question-count-4",
+            "pass": true,
+            "ms": 4,
+            "error": null
+          },
+          {
+            "name": "publish",
+            "pass": true,
+            "ms": 348,
+            "error": null
+          },
+          {
+            "name": "published-badge",
+            "pass": true,
+            "ms": 215,
+            "error": null
+          },
+          {
+            "name": "new-draft-not-mutate",
+            "pass": true,
+            "ms": 7,
+            "error": null
+          }
+        ],
+        "time_ms": 6458,
+        "errors": 0,
+        "completed_steps": 14,
+        "total_steps": 14
+      },
+      "task2": {
+        "attempted": true,
+        "completed": true,
+        "steps": [
+          {
+            "name": "login",
+            "pass": true,
+            "ms": 2022,
+            "error": null
+          },
+          {
+            "name": "open-course",
+            "pass": true,
+            "ms": 232,
+            "error": null
+          },
+          {
+            "name": "open-quiz",
+            "pass": true,
+            "ms": 163,
+            "error": null
+          },
+          {
+            "name": "read-preflight",
+            "pass": true,
+            "ms": 9,
+            "error": null
+          },
+          {
+            "name": "agree-rules",
+            "pass": true,
+            "ms": 400,
+            "error": null
+          },
+          {
+            "name": "start-attempt",
+            "pass": true,
+            "ms": 72,
+            "error": null
+          },
+          {
+            "name": "answer-questions",
+            "pass": true,
+            "ms": 1426,
+            "error": null
+          },
+          {
+            "name": "save-acknowledged",
+            "pass": true,
+            "ms": 11,
+            "error": null
+          },
+          {
+            "name": "submit",
+            "pass": true,
+            "ms": 271,
+            "error": null
+          },
+          {
+            "name": "receipt",
+            "pass": true,
+            "ms": 4,
+            "error": null
+          }
+        ],
+        "time_ms": 4706,
+        "errors": 0,
+        "completed_steps": 10,
+        "total_steps": 10
+      }
+    },
+    {
+      "id": "N14",
+      "name": "Arnav Gupta",
+      "role": "student",
+      "task1": {
+        "attempted": true,
+        "completed": true,
+        "steps": [
+          {
+            "name": "login",
+            "pass": true,
+            "ms": 1981,
+            "error": null
+          },
+          {
+            "name": "open-course",
+            "pass": true,
+            "ms": 367,
+            "error": null
+          },
+          {
+            "name": "open-editor",
+            "pass": true,
+            "ms": 211,
+            "error": null
+          },
+          {
+            "name": "set-metadata",
+            "pass": true,
+            "ms": 39,
+            "error": null
+          },
+          {
+            "name": "save-settings",
+            "pass": true,
+            "ms": 811,
+            "error": null
+          },
+          {
+            "name": "add-question-1-single",
+            "pass": true,
+            "ms": 130,
+            "error": null
+          },
+          {
+            "name": "add-question-2-multiple",
+            "pass": true,
+            "ms": 291,
+            "error": null
+          },
+          {
+            "name": "add-question-3-numeric",
+            "pass": true,
+            "ms": 208,
+            "error": null
+          },
+          {
+            "name": "add-question-4-short",
+            "pass": true,
+            "ms": 990,
+            "error": null
+          },
+          {
+            "name": "save-exam-rules",
+            "pass": true,
+            "ms": 468,
+            "error": null
+          },
+          {
+            "name": "question-count-4",
+            "pass": true,
+            "ms": 4,
+            "error": null
+          },
+          {
+            "name": "publish",
+            "pass": true,
+            "ms": 362,
+            "error": null
+          },
+          {
+            "name": "published-badge",
+            "pass": true,
+            "ms": 189,
+            "error": null
+          },
+          {
+            "name": "new-draft-not-mutate",
+            "pass": true,
+            "ms": 7,
+            "error": null
+          }
+        ],
+        "time_ms": 6188,
+        "errors": 0,
+        "completed_steps": 14,
+        "total_steps": 14
+      },
+      "task2": {
+        "attempted": true,
+        "completed": true,
+        "steps": [
+          {
+            "name": "login",
+            "pass": true,
+            "ms": 1748,
+            "error": null
+          },
+          {
+            "name": "open-course",
+            "pass": true,
+            "ms": 248,
+            "error": null
+          },
+          {
+            "name": "open-quiz",
+            "pass": true,
+            "ms": 186,
+            "error": null
+          },
+          {
+            "name": "read-preflight",
+            "pass": true,
+            "ms": 7,
+            "error": null
+          },
+          {
+            "name": "agree-rules",
+            "pass": true,
+            "ms": 394,
+            "error": null
+          },
+          {
+            "name": "start-attempt",
+            "pass": true,
+            "ms": 73,
+            "error": null
+          },
+          {
+            "name": "answer-questions",
+            "pass": true,
+            "ms": 1403,
+            "error": null
+          },
+          {
+            "name": "save-acknowledged",
+            "pass": true,
+            "ms": 8,
+            "error": null
+          },
+          {
+            "name": "submit",
+            "pass": true,
+            "ms": 319,
+            "error": null
+          },
+          {
+            "name": "receipt",
+            "pass": true,
+            "ms": 12,
+            "error": null
+          }
+        ],
+        "time_ms": 4481,
+        "errors": 0,
+        "completed_steps": 10,
+        "total_steps": 10
+      }
+    },
+    {
+      "id": "N15",
+      "name": "Ishita Bose",
+      "role": "student",
+      "task1": {
+        "attempted": true,
+        "completed": true,
+        "steps": [
+          {
+            "name": "login",
+            "pass": true,
+            "ms": 2013,
+            "error": null
+          },
+          {
+            "name": "open-course",
+            "pass": true,
+            "ms": 299,
+            "error": null
+          },
+          {
+            "name": "open-editor",
+            "pass": true,
+            "ms": 207,
+            "error": null
+          },
+          {
+            "name": "set-metadata",
+            "pass": true,
+            "ms": 45,
+            "error": null
+          },
+          {
+            "name": "save-settings",
+            "pass": true,
+            "ms": 796,
+            "error": null
+          },
+          {
+            "name": "add-question-1-single",
+            "pass": true,
+            "ms": 161,
+            "error": null
+          },
+          {
+            "name": "add-question-2-multiple",
+            "pass": true,
+            "ms": 308,
+            "error": null
+          },
+          {
+            "name": "add-question-3-numeric",
+            "pass": true,
+            "ms": 129,
+            "error": null
+          },
+          {
+            "name": "add-question-4-short",
+            "pass": true,
+            "ms": 981,
+            "error": null
+          },
+          {
+            "name": "save-exam-rules",
+            "pass": true,
+            "ms": 452,
+            "error": null
+          },
+          {
+            "name": "question-count-4",
+            "pass": true,
+            "ms": 8,
+            "error": null
+          },
+          {
+            "name": "publish",
+            "pass": true,
+            "ms": 351,
+            "error": null
+          },
+          {
+            "name": "published-badge",
+            "pass": true,
+            "ms": 201,
+            "error": null
+          },
+          {
+            "name": "new-draft-not-mutate",
+            "pass": true,
+            "ms": 7,
+            "error": null
+          }
+        ],
+        "time_ms": 6073,
+        "errors": 0,
+        "completed_steps": 14,
+        "total_steps": 14
+      },
+      "task2": {
+        "attempted": true,
+        "completed": true,
+        "steps": [
+          {
+            "name": "login",
+            "pass": true,
+            "ms": 2244,
+            "error": null
+          },
+          {
+            "name": "open-course",
+            "pass": true,
+            "ms": 237,
+            "error": null
+          },
+          {
+            "name": "open-quiz",
+            "pass": true,
+            "ms": 154,
+            "error": null
+          },
+          {
+            "name": "read-preflight",
+            "pass": true,
+            "ms": 8,
+            "error": null
+          },
+          {
+            "name": "agree-rules",
+            "pass": true,
+            "ms": 385,
+            "error": null
+          },
+          {
+            "name": "start-attempt",
+            "pass": true,
+            "ms": 54,
+            "error": null
+          },
+          {
+            "name": "answer-questions",
+            "pass": true,
+            "ms": 1508,
+            "error": null
+          },
+          {
+            "name": "save-acknowledged",
+            "pass": true,
+            "ms": 12,
+            "error": null
+          },
+          {
+            "name": "submit",
+            "pass": true,
+            "ms": 322,
+            "error": null
+          },
+          {
+            "name": "receipt",
+            "pass": true,
+            "ms": 16,
+            "error": null
+          }
+        ],
+        "time_ms": 5018,
+        "errors": 0,
+        "completed_steps": 10,
+        "total_steps": 10
+      }
+    }
+  ]
+}

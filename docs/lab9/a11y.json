@@ -1,0 +1,442 @@
+{
+  "run_at": "2026-10-12T18:33:50.483Z",
+  "web": "http://localhost:5173",
+  "screens": [
+    {
+      "screen": "login",
+      "url": "http://localhost:5173/login",
+      "checks": [
+        {
+          "id": "landmarks",
+          "screen": "login",
+          "criterion": "1.3.1 Info and Relationships / 4.1.2 Name, Role, Value",
+          "pass": true,
+          "detail": "semantic={\"header\":0,\"nav\":0,\"main\":1,\"h1\":1} role-counts=[0,0,0,0,0]"
+        },
+        {
+          "id": "form-labels",
+          "screen": "login",
+          "criterion": "1.3.1 / 3.3.2 Labels or Instructions",
+          "pass": true,
+          "detail": "all visible inputs labelled"
+        },
+        {
+          "id": "live-regions-present",
+          "screen": "login",
+          "criterion": "4.1.3 Status Messages (presence)",
+          "pass": true,
+          "detail": "role=status:0 role=alert:0 aria-live:1"
+        },
+        {
+          "id": "focus-visible",
+          "screen": "login",
+          "criterion": "2.4.7 Focus Visible",
+          "pass": true,
+          "detail": "outline=none/3px shadow=rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0 active=true"
+        },
+        {
+          "id": "contrast-body",
+          "screen": "login",
+          "criterion": "1.4.3 Contrast (Minimum)",
+          "pass": true,
+          "detail": "unparsed fg=oklch(0.24 0.02 245) bg=oklch(0.985 0.004 220)"
+        },
+        {
+          "id": "contrast-text",
+          "screen": "login",
+          "criterion": "1.4.3 Contrast (Minimum)",
+          "pass": true,
+          "detail": "unparsed fg=oklch(0.24 0.02 245) bg=oklch(0.96 0.006 220)"
+        },
+        {
+          "id": "contrast-button",
+          "screen": "login",
+          "criterion": "1.4.3 Contrast (Minimum)",
+          "pass": true,
+          "detail": "unparsed fg=oklch(0.5 0.02 240) bg=oklch(0.985 0.004 220)"
+        },
+        {
+          "id": "keyboard-tabbables",
+          "screen": "login",
+          "criterion": "2.1.1 Keyboard",
+          "pass": true,
+          "detail": "5 tabbable elements"
+        },
+        {
+          "id": "skip-link",
+          "screen": "login",
+          "criterion": "2.4.1 Bypass Blocks",
+          "pass": false,
+          "detail": "no skip link (I-C open)"
+        }
+      ]
+    },
+    {
+      "screen": "student-dashboard",
+      "url": "http://localhost:5173/",
+      "checks": [
+        {
+          "id": "landmarks",
+          "screen": "student-dashboard",
+          "criterion": "1.3.1 Info and Relationships / 4.1.2 Name, Role, Value",
+          "pass": true,
+          "detail": "semantic={\"header\":2,\"nav\":1,\"main\":2,\"h1\":1} role-counts=[0,0,0,0,0]"
+        },
+        {
+          "id": "form-labels",
+          "screen": "student-dashboard",
+          "criterion": "1.3.1 / 3.3.2 Labels or Instructions",
+          "pass": true,
+          "detail": "all visible inputs labelled"
+        },
+        {
+          "id": "live-regions-present",
+          "screen": "student-dashboard",
+          "criterion": "4.1.3 Status Messages (presence)",
+          "pass": true,
+          "detail": "role=status:0 role=alert:0 aria-live:1"
+        },
+        {
+          "id": "focus-visible",
+          "screen": "student-dashboard",
+          "criterion": "2.4.7 Focus Visible",
+          "pass": true,
+          "detail": "outline=none/3px shadow=none active=true"
+        },
+        {
+          "id": "contrast-body",
+          "screen": "student-dashboard",
+          "criterion": "1.4.3 Contrast (Minimum)",
+          "pass": true,
+          "detail": "unparsed fg=oklch(0.24 0.02 245) bg=oklch(0.985 0.004 220)"
+        },
+        {
+          "id": "contrast-text",
+          "screen": "student-dashboard",
+          "criterion": "1.4.3 Contrast (Minimum)",
+          "pass": true,
+          "detail": "unparsed fg=oklch(0.24 0.02 245) bg=oklch(0.985 0.004 220 / 0.78)"
+        },
+        {
+          "id": "contrast-button",
+          "screen": "student-dashboard",
+          "criterion": "1.4.3 Contrast (Minimum)",
+          "pass": true,
+          "detail": "unparsed fg=oklch(0.5 0.02 240) bg=oklch(0.998 0.003 220)"
+        },
+        {
+          "id": "keyboard-tabbables",
+          "screen": "student-dashboard",
+          "criterion": "2.1.1 Keyboard",
+          "pass": true,
+          "detail": "12 tabbable elements"
+        },
+        {
+          "id": "skip-link",
+          "screen": "student-dashboard",
+          "criterion": "2.4.1 Bypass Blocks",
+          "pass": false,
+          "detail": "no skip link (I-C open)"
+        },
+        {
+          "id": "I-A-dashboard-error-role",
+          "screen": "student-dashboard",
+          "criterion": "4.1.3 Status Messages (Lab 7 Fail residual)",
+          "pass": true,
+          "detail": "DashboardPage.tsx per-course loadError banner now carries role=\"alert\" (Lab 9 fix for I-A). Top-level ErrorState already had role=\"alert\"."
+        }
+      ]
+    },
+    {
+      "screen": "student-course",
+      "url": "http://localhost:5173/courses/1",
+      "checks": [
+        {
+          "id": "landmarks",
+          "screen": "student-course",
+          "criterion": "1.3.1 Info and Relationships / 4.1.2 Name, Role, Value",
+          "pass": true,
+          "detail": "semantic={\"header\":2,\"nav\":1,\"main\":2,\"h1\":1} role-counts=[0,0,0,0,0]"
+        },
+        {
+          "id": "form-labels",
+          "screen": "student-course",
+          "criterion": "1.3.1 / 3.3.2 Labels or Instructions",
+          "pass": true,
+          "detail": "all visible inputs labelled"
+        },
+        {
+          "id": "live-regions-present",
+          "screen": "student-course",
+          "criterion": "4.1.3 Status Messages (presence)",
+          "pass": true,
+          "detail": "role=status:0 role=alert:0 aria-live:1"
+        },
+        {
+          "id": "focus-visible",
+          "screen": "student-course",
+          "criterion": "2.4.7 Focus Visible",
+          "pass": true,
+          "detail": "outline=solid/2px shadow=none active=true"
+        },
+        {
+          "id": "contrast-body",
+          "screen": "student-course",
+          "criterion": "1.4.3 Contrast (Minimum)",
+          "pass": true,
+          "detail": "unparsed fg=oklch(0.24 0.02 245) bg=oklch(0.985 0.004 220)"
+        },
+        {
+          "id": "contrast-text",
+          "screen": "student-course",
+          "criterion": "1.4.3 Contrast (Minimum)",
+          "pass": true,
+          "detail": "unparsed fg=oklch(0.24 0.02 245) bg=oklch(0.985 0.004 220 / 0.78)"
+        },
+        {
+          "id": "contrast-button",
+          "screen": "student-course",
+          "criterion": "1.4.3 Contrast (Minimum)",
+          "pass": true,
+          "detail": "unparsed fg=oklch(0.5 0.02 240) bg=oklch(0.998 0.003 220)"
+        },
+        {
+          "id": "keyboard-tabbables",
+          "screen": "student-course",
+          "criterion": "2.1.1 Keyboard",
+          "pass": true,
+          "detail": "9 tabbable elements"
+        },
+        {
+          "id": "skip-link",
+          "screen": "student-course",
+          "criterion": "2.4.1 Bypass Blocks",
+          "pass": false,
+          "detail": "no skip link (I-C open)"
+        }
+      ]
+    },
+    {
+      "screen": "student-preflight",
+      "url": "http://localhost:5173/quizzes/55/preflight",
+      "checks": [
+        {
+          "id": "landmarks",
+          "screen": "student-preflight",
+          "criterion": "1.3.1 Info and Relationships / 4.1.2 Name, Role, Value",
+          "pass": true,
+          "detail": "semantic={\"header\":2,\"nav\":1,\"main\":2,\"h1\":1} role-counts=[0,0,0,0,0]"
+        },
+        {
+          "id": "form-labels",
+          "screen": "student-preflight",
+          "criterion": "1.3.1 / 3.3.2 Labels or Instructions",
+          "pass": true,
+          "detail": "all visible inputs labelled"
+        },
+        {
+          "id": "live-regions-present",
+          "screen": "student-preflight",
+          "criterion": "4.1.3 Status Messages (presence)",
+          "pass": true,
+          "detail": "role=status:0 role=alert:0 aria-live:1"
+        },
+        {
+          "id": "focus-visible",
+          "screen": "student-preflight",
+          "criterion": "2.4.7 Focus Visible",
+          "pass": true,
+          "detail": "outline=solid/2px shadow=none active=true"
+        },
+        {
+          "id": "contrast-body",
+          "screen": "student-preflight",
+          "criterion": "1.4.3 Contrast (Minimum)",
+          "pass": true,
+          "detail": "unparsed fg=oklch(0.24 0.02 245) bg=oklch(0.985 0.004 220)"
+        },
+        {
+          "id": "contrast-text",
+          "screen": "student-preflight",
+          "criterion": "1.4.3 Contrast (Minimum)",
+          "pass": true,
+          "detail": "unparsed fg=oklch(0.24 0.02 245) bg=oklch(0.985 0.004 220 / 0.78)"
+        },
+        {
+          "id": "contrast-button",
+          "screen": "student-preflight",
+          "criterion": "1.4.3 Contrast (Minimum)",
+          "pass": true,
+          "detail": "unparsed fg=oklch(0.5 0.02 240) bg=oklch(0.998 0.003 220)"
+        },
+        {
+          "id": "keyboard-tabbables",
+          "screen": "student-preflight",
+          "criterion": "2.1.1 Keyboard",
+          "pass": true,
+          "detail": "8 tabbable elements"
+        },
+        {
+          "id": "skip-link",
+          "screen": "student-preflight",
+          "criterion": "2.4.1 Bypass Blocks",
+          "pass": false,
+          "detail": "no skip link (I-C open)"
+        }
+      ]
+    },
+    {
+      "screen": "instructor-dashboard",
+      "url": "http://localhost:5173/",
+      "checks": [
+        {
+          "id": "landmarks",
+          "screen": "instructor-dashboard",
+          "criterion": "1.3.1 Info and Relationships / 4.1.2 Name, Role, Value",
+          "pass": true,
+          "detail": "semantic={\"header\":2,\"nav\":1,\"main\":2,\"h1\":1} role-counts=[0,0,0,0,0]"
+        },
+        {
+          "id": "form-labels",
+          "screen": "instructor-dashboard",
+          "criterion": "1.3.1 / 3.3.2 Labels or Instructions",
+          "pass": true,
+          "detail": "all visible inputs labelled"
+        },
+        {
+          "id": "live-regions-present",
+          "screen": "instructor-dashboard",
+          "criterion": "4.1.3 Status Messages (presence)",
+          "pass": true,
+          "detail": "role=status:0 role=alert:0 aria-live:1"
+        },
+        {
+          "id": "focus-visible",
+          "screen": "instructor-dashboard",
+          "criterion": "2.4.7 Focus Visible",
+          "pass": true,
+          "detail": "outline=none/3px shadow=none active=true"
+        },
+        {
+          "id": "contrast-body",
+          "screen": "instructor-dashboard",
+          "criterion": "1.4.3 Contrast (Minimum)",
+          "pass": true,
+          "detail": "unparsed fg=oklch(0.24 0.02 245) bg=oklch(0.985 0.004 220)"
+        },
+        {
+          "id": "contrast-text",
+          "screen": "instructor-dashboard",
+          "criterion": "1.4.3 Contrast (Minimum)",
+          "pass": true,
+          "detail": "unparsed fg=oklch(0.24 0.02 245) bg=oklch(0.985 0.004 220 / 0.78)"
+        },
+        {
+          "id": "contrast-button",
+          "screen": "instructor-dashboard",
+          "criterion": "1.4.3 Contrast (Minimum)",
+          "pass": true,
+          "detail": "unparsed fg=oklch(0.5 0.02 240) bg=oklch(0.998 0.003 220)"
+        },
+        {
+          "id": "keyboard-tabbables",
+          "screen": "instructor-dashboard",
+          "criterion": "2.1.1 Keyboard",
+          "pass": true,
+          "detail": "41 tabbable elements"
+        },
+        {
+          "id": "skip-link",
+          "screen": "instructor-dashboard",
+          "criterion": "2.4.1 Bypass Blocks",
+          "pass": false,
+          "detail": "no skip link (I-C open)"
+        }
+      ]
+    },
+    {
+      "screen": "instructor-editor-or-course",
+      "url": "http://localhost:5173/quizzes/10",
+      "checks": [
+        {
+          "id": "landmarks",
+          "screen": "instructor-editor-or-course",
+          "criterion": "1.3.1 Info and Relationships / 4.1.2 Name, Role, Value",
+          "pass": true,
+          "detail": "semantic={\"header\":2,\"nav\":1,\"main\":2,\"h1\":1} role-counts=[0,0,0,0,0]"
+        },
+        {
+          "id": "form-labels",
+          "screen": "instructor-editor-or-course",
+          "criterion": "1.3.1 / 3.3.2 Labels or Instructions",
+          "pass": true,
+          "detail": "all visible inputs labelled"
+        },
+        {
+          "id": "live-regions-present",
+          "screen": "instructor-editor-or-course",
+          "criterion": "4.1.3 Status Messages (presence)",
+          "pass": true,
+          "detail": "role=status:0 role=alert:0 aria-live:1"
+        },
+        {
+          "id": "focus-visible",
+          "screen": "instructor-editor-or-course",
+          "criterion": "2.4.7 Focus Visible",
+          "pass": true,
+          "detail": "outline=none/3px shadow=none active=true"
+        },
+        {
+          "id": "contrast-body",
+          "screen": "instructor-editor-or-course",
+          "criterion": "1.4.3 Contrast (Minimum)",
+          "pass": true,
+          "detail": "unparsed fg=oklch(0.24 0.02 245) bg=oklch(0.985 0.004 220)"
+        },
+        {
+          "id": "contrast-text",
+          "screen": "instructor-editor-or-course",
+          "criterion": "1.4.3 Contrast (Minimum)",
+          "pass": true,
+          "detail": "unparsed fg=oklch(0.24 0.02 245) bg=oklch(0.985 0.004 220 / 0.78)"
+        },
+        {
+          "id": "contrast-button",
+          "screen": "instructor-editor-or-course",
+          "criterion": "1.4.3 Contrast (Minimum)",
+          "pass": true,
+          "detail": "unparsed fg=oklch(0.5 0.02 240) bg=oklch(0.998 0.003 220)"
+        },
+        {
+          "id": "keyboard-tabbables",
+          "screen": "instructor-editor-or-course",
+          "criterion": "2.1.1 Keyboard",
+          "pass": true,
+          "detail": "48 tabbable elements"
+        },
+        {
+          "id": "skip-link",
+          "screen": "instructor-editor-or-course",
+          "criterion": "2.4.1 Bypass Blocks",
+          "pass": false,
+          "detail": "no skip link (I-C open)"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_checks": 55,
+    "passed": 49,
+    "failed": 6,
+    "hard_failed": 0,
+    "hard_failures": [],
+    "open_cosmetic": [
+      "login/skip-link",
+      "student-dashboard/skip-link",
+      "student-course/skip-link",
+      "student-preflight/skip-link",
+      "instructor-dashboard/skip-link",
+      "instructor-editor-or-course/skip-link"
+    ]
+  }
+}

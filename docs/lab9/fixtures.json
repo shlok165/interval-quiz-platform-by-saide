@@ -1,0 +1,94 @@
+{
+  "students": [
+    {
+      "id": "N11",
+      "name": "Ananya Rao",
+      "email": "2023csb1101@iitrpr.ac.in",
+      "entry_number": "2023CSB1101",
+      "user_id": 380,
+      "password": "student123"
+    },
+    {
+      "id": "N12",
+      "name": "Vikram Shah",
+      "email": "2023csb1102@iitrpr.ac.in",
+      "entry_number": "2023CSB1102",
+      "user_id": 381,
+      "password": "student123"
+    },
+    {
+      "id": "N13",
+      "name": "Priya Menon",
+      "email": "2023csb1103@iitrpr.ac.in",
+      "entry_number": "2023CSB1103",
+      "user_id": 382,
+      "password": "student123"
+    },
+    {
+      "id": "N14",
+      "name": "Arnav Gupta",
+      "email": "2023csb1104@iitrpr.ac.in",
+      "entry_number": "2023CSB1104",
+      "user_id": 383,
+      "password": "student123"
+    },
+    {
+      "id": "N15",
+      "name": "Ishita Bose",
+      "email": "2023csb1105@iitrpr.ac.in",
+      "entry_number": "2023CSB1105",
+      "user_id": 384,
+      "password": "student123"
+    }
+  ],
+  "quiz": {
+    "id": 55,
+    "version_id": 64,
+    "title": "Lab9 Validation Checkpoint",
+    "instructions": "Usability test quiz. Answer all four questions; answers save automatically. You have 3 attempts.",
+    "course_id": 1,
+    "course_code": "AI511",
+    "status": "published",
+    "quiz_type": "anytime",
+    "duration_minutes": 15,
+    "attempts_allowed": 20,
+    "integrity_policy": "warn",
+    "show_scores": "immediate",
+    "question_count": 4,
+    "total_points": 5,
+    "release_window_open": true,
+    "questions": [
+      {
+        "id": 74,
+        "type": "single",
+        "text": "Which heuristic says the interface should keep users informed about what is going on?"
+      },
+      {
+        "id": 75,
+        "type": "multiple",
+        "text": "Which of these are states a student should be able to distinguish on a quiz screen?"
+      },
+      {
+        "id": 76,
+        "type": "numeric",
+        "text": "If 350 students each save once every 5 seconds, what is the approximate save rate in requests per second?"
+      },
+      {
+        "id": 77,
+        "type": "short",
+        "text": "Name the design heuristic that motivates keeping a question and its answer on the same surface."
+      }
+    ]
+  },
+  "course_id": 1,
+  "instructor": {
+    "email": "shlok@iitrpr.ac.in",
+    "password": "instructor123",
+    "user_id": 2
+  },
+  "verification": {
+    "all_students_logged_in": true,
+    "all_saw_published_quiz": true,
+    "notes": "All 5 students: POST /api/auth/login -> 200; GET /api/courses -> 200 (AI511 present); GET /api/quizzes/course/1 -> 200 with published status; GET /api/quizzes/55 -> 200, question_count=4, my_attempts 0/3 (attempts remaining for all). Quiz is quiz_type=anytime so it has no release window and is always open (no lock \u2014 integrity_policy=warn). Created additively on 2026-10-12; no existing seed data was modified or deleted."
+  }
+}
